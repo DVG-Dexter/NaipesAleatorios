@@ -1,8 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); */
 
 body {
-  font-family: 'Indie Flower';
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,18 +16,18 @@ h1 {
   font-style: italic;
 }
 
-.overlay {
+/*.overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('src/img/portrait-man-playing-poker-casino'); 
+  background-image: url('src/img/portrait-man-playing-poker-casino');
   background-size: cover;
   background-position: center;
   opacity: 0.5; 
   z-index: -1; 
-}
+}*/
 
 .container {
   position: relative;
