@@ -1,1 +1,89 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  font-family: 'Indie Flower';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #000000;
+}
+
+h1 {
+  color: white;
+  font-style: italic;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('src/img/portrait-man-playing-poker-casino'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; 
+  z-index: -1; 
+}
+
+.container {
+  position: relative;
+  z-index: 1; 
+  color: white;
+  text-align: center;
+}
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  position: relative;
+  font-size: 80px;
+}
+
+.card .corner {
+  position: absolute;
+  font-size: 30px;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.spade {
+  color: black;
+}
+
+.club {
+  color: black;
+}
+
+.heart {
+  color: red;
+}
+
+.diamond {
+  color: red;
+}
+
+.controls, .dimensions {
+  margin: 20px 10;
+}

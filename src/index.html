@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Generador de Cartas Aleatorio</title>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="overlay"></div>
+    <div class="container">
+      <h1>" Generador de Cartas Aleatorio "</h1>
+      <div class="controls">
+        <button id="generateCard" style="color: rgb(5, 5, 5);">
+          <strong>Click aqui para Nueva Carta</strong>
+        </button>
+        <label for="timerInput" style="color: rgb(255, 255, 255);"
+          >Temporizador (segundos):</label
+        >
+        <input type="number" id="timerInput" value="10" min="1" max="60" />
       </div>
+      <div class="card" id="card"></div>
+      <div class="dimensions">
+        <label for="widthInput" style="color: rgb(255, 255, 255);"
+          >Ancho de la carta:</label
+        >
+        <input type="number" id="widthInput" value="200" min="50" max="500" />
+        <label for="heightInput" style="color: rgb(255, 255, 255);"
+          >Alto de la carta:</label
+        >
+        <input type="number" id="heightInput" value="300" min="50" max="500" />
+      </div>
+      <p id="timer" style="color: rgb(255, 255, 255); font-size: 1.5em;">
+        Próxima carta aleatoria en: 10 segundos
+      </p>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
